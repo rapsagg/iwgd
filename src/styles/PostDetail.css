@@ -1,0 +1,387 @@
+/* ============================================
+   POST DETAIL - Main Container & Post Card
+   ============================================ */
+.post-detail-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: var(--space-32) var(--space-20);
+}
+
+.back-btn {
+  background: none;
+  border: none;
+  color: var(--color-primary);
+  font: var(--font-base);
+  font-weight: var(--font-weight-medium);
+  cursor: pointer;
+  padding: var(--space-8) 0;
+  margin-bottom: var(--space-20);
+  transition: color var(--duration-fast) var(--ease-standard);
+}
+
+.back-btn:hover {
+  color: var(--color-primary-hover);
+}
+
+.post-detail-card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-card);
+  border-radius: var(--radius-lg);
+  padding: var(--space-32);
+  margin-bottom: var(--space-32);
+}
+
+/* ============================================
+   POST HEADER & META
+   ============================================ */
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-20);
+  padding-bottom: var(--space-16);
+  border-bottom: 1px solid var(--color-card-inner);
+}
+
+.post-meta-left {
+  display: flex;
+  align-items: center;
+}
+
+.post-topic-link {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  font: var(--font-sm);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-primary);
+  transition: color var(--duration-fast) var(--ease-standard);
+}
+
+.post-topic-link:hover {
+  color: var(--color-primary-hover);
+}
+
+.post-meta-right {
+  display: flex;
+  align-items: center;
+  gap: var(--space-12);
+}
+
+.post-author-info {
+  display: flex;
+  align-items: center;
+  gap: var(--space-8);
+}
+
+.author-name-link {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text);
+  transition: color var(--duration-fast) var(--ease-standard);
+}
+
+.author-name-link:hover {
+  color: var(--color-primary);
+}
+
+.author-tier {
+  font: var(--font-sm);
+  color: var(--color-textSecondary);
+  padding: 2px 8px;
+  border-radius: var(--radius-sm);
+}
+
+.post-time {
+  color: var(--color-textSecondary);
+  font: var(--font-sm);
+  white-space: nowrap;
+}
+
+
+/* ============================================
+   POST CONTENT
+   ============================================ */
+.post-title {
+  font: var(--font-sm);
+  color: var(--color-text);
+  margin: 0 0 var(--space-20) 0;
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-tight);
+}
+
+.post-content {
+  color: var(--color-text);
+  font: var(--font-base);
+  line-height: var(--line-height-normal);
+  margin-bottom: var(--space-24);
+  white-space: pre-wrap;
+}
+
+/* ============================================
+   POST ACTIONS
+   ============================================ */
+.post-actions {
+  display: flex;
+  gap: var(--space-12);
+  padding-top: var(--space-16);
+  border-top: 1px solid var(--color-card-inner);
+}
+
+.action-btn {
+  background: none;
+  border: none;
+  color: var(--color-textSecondary);
+  cursor: pointer;
+  font: var(--font-sm);
+  padding: var(--space-8);
+  border-radius: var(--radius-sm);
+  transition: all var(--duration-fast) var(--ease-standard);
+}
+
+.action-btn:hover {
+  background: var(--color-surface);
+  color: var(--color-primary);
+}
+
+.action-btn.liked {
+  color: var(--color-primary);
+  font-weight: var(--font-weight-semibold);
+}
+
+/* ============================================
+   COMMENTS SECTION
+   ============================================ */
+.comments-section {
+  margin-top: var(--space-32);
+}
+
+.comments-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-20);
+}
+
+.comments-section h3 {
+  font: var(--font-2xl);
+  color: var(--color-text);
+  margin: 0;
+  font-weight: var(--font-weight-semibold);
+}
+
+/* Sort Buttons */
+.sort-buttons {
+  display: flex;
+  gap: var(--space-8);
+}
+
+.sort-buttons button {
+  padding: var(--space-8) var(--space-12);
+  background: var(--color-background);
+  color: var(--color-textSecondary);
+  border: 1px solid var(--color-card);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  font: var(--font-sm);
+  transition: all 0.2s;
+}
+
+.sort-buttons button.active {
+  background: var(--color-primary);
+  color: white;
+  border-color: var(--color-primary);
+}
+
+.sort-buttons button:hover {
+  background: var(--color-primary);
+  color: white;
+}
+
+/* ============================================
+   COMMENT FORM
+   ============================================ */
+.comment-form {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-card);
+  border-radius: var(--radius-lg);
+  padding: var(--space-20);
+  margin-bottom: var(--space-24);
+}
+
+.comment-form textarea {
+  width: 100%;
+  padding: var(--space-12);
+  border: 1px solid var(--color-card);
+  border-radius: var(--radius-base);
+  font: var(--font-base);
+  font-family: inherit;
+  resize: vertical;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  margin-bottom: var(--space-12);
+  transition: border-color var(--duration-fast) var(--ease-standard);
+  min-height: 80px;
+}
+
+.comment-form textarea:focus {
+  outline: none;
+  border-color: var(--color-primary);
+}
+
+.comment-form button {
+  background-color: var(--color-primary);
+  color: white;
+  border: none;
+  padding: var(--space-10) var(--space-20);
+  border-radius: var(--radius-base);
+  font: var(--font-base);
+  font-weight: var(--font-weight-medium);
+  cursor: pointer;
+  transition: all var(--duration-fast) var(--ease-standard);
+}
+
+.comment-form button:hover:not(:disabled) {
+  background-color: var(--color-primary-hover);
+}
+
+.comment-form button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* ============================================
+   COMMENTS LIST
+   ============================================ */
+.comments-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-16);
+}
+
+.comment {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-card);
+  border-radius: var(--radius-lg);
+  padding: var(--space-20);
+  border-left: 3px solid var(--color-primary);
+}
+
+.comment-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-12);
+}
+
+.comment-header strong {
+  color: var(--color-text);
+  font-weight: var(--font-weight-semibold);
+}
+
+.comment-date {
+  color: var(--color-textSecondary);
+  font: var(--font-sm);
+}
+
+.comment-content {
+  margin: 0 0 var(--space-12) 0;
+  color: var(--color-text);
+  line-height: var(--line-height-normal);
+}
+
+.comment-footer {
+  display: flex;
+  gap: var(--space-16);
+  font: var(--font-sm);
+  color: var(--color-textSecondary);
+}
+
+.no-comments {
+  text-align: center;
+  color: var(--color-textSecondary);
+  padding: var(--space-32);
+  font: var(--font-base);
+}
+
+/* ============================================
+   LOADING & ERROR STATES
+   ============================================ */
+.loading {
+  text-align: center;
+  padding: var(--space-32);
+  color: var(--color-textSecondary);
+  font: var(--font-base);
+}
+
+.error-container {
+  text-align: center;
+  padding: var(--space-32);
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.error-container h2 {
+  color: var(--color-error);
+  font: var(--font-lg);
+  margin-bottom: var(--space-20);
+}
+
+.error-container button {
+  background-color: var(--color-primary);
+  color: white;
+  border: none;
+  padding: var(--space-10) var(--space-20);
+  border-radius: var(--radius-base);
+  font: var(--font-base);
+  cursor: pointer;
+  transition: background-color var(--duration-fast) var(--ease-standard);
+}
+
+.error-container button:hover {
+  background-color: var(--color-primary-hover);
+}
+
+/* ============================================
+   MOBILE RESPONSIVE
+   ============================================ */
+@media (max-width: 768px) {
+  .post-detail-container {
+    padding: var(--space-20) var(--space-16);
+  }
+
+  .post-detail-card {
+    padding: var(--space-20);
+  }
+
+  .post-header {
+    flex-direction: column;
+    gap: var(--space-12);
+  }
+
+  .post-title {
+    font: var(--font-2xl);
+  }
+
+  .comment-form {
+    padding: var(--space-16);
+  }
+
+  .comments-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-12);
+  }
+
+  .sort-buttons {
+    width: 100%;
+  }
+
+  .sort-buttons button {
+    flex: 1;
+  }
+}

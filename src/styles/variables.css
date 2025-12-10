@@ -1,0 +1,59 @@
+:root {
+  /* Font sizes */
+  --font-xs: 0.75rem;     /* 12px */
+  --font-sm: 0.875rem;    /* 14px */
+  --font-base: 1rem;      /* 16px */
+  --font-lg: 1.125rem;    /* 18px */
+  --font-xl: 1.25rem;     /* 20px */
+  --font-2xl: 1.5rem;     /* 24px */
+  
+  /* Spacing */
+  --space-2: 0.125rem;    /* 2px */
+  --space-4: 0.25rem;     /* 4px */
+  --space-6: 0.375rem;    /* 6px */
+  --space-8: 0.5rem;      /* 8px */
+  --space-10: 0.625rem;   /* 10px */
+  --space-12: 0.75rem;    /* 12px */
+  --space-16: 1rem;       /* 16px */
+  --space-20: 1.25rem;    /* 20px */
+  --space-24: 1.5rem;     /* 24px */
+  --space-32: 2rem;       /* 32px */
+  
+  /* Font weights */
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+
+  /* Line heights */
+  --line-height-tight: 1.25;
+  --line-height-normal: 1.5;
+
+  /* Transitions */
+  --duration-fast: 150ms;
+  --duration-normal: 200ms;
+  --ease-standard: cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Border radius */
+  --radius-sm: 4px;
+  --radius-base: 8px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --focus-ring: 0 0 0 3px rgba(33, 128, 145, 0.3);
+  
+  /* Colors from theme.js */
+  --color-white: #FFFFFF;
+  --color-error-rgb: 192, 21, 47;
+  --color-teal-500-rgb: 33, 128, 145;
+  --status-bg-opacity: 0.1;
+  --status-border-opacity: 0.3;
+  --color-card-border: rgba(94, 82, 64, 0.1);
+  --color-card-border-inner: rgba(94, 82, 64, 0.05);
+  --color-primary-hover: #1a6a77;
+
+  --primary: var(--color-primary);
+  --surface: var(--color-surface);
+  --text-secondary: var(--color-textSecondary);
+}
